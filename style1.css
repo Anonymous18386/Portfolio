@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Consolas';
 }
 
 body {
@@ -49,7 +49,7 @@ button {
     background-color: black;
     color: white;
     padding: 12px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 button:hover {

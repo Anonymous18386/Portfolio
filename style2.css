@@ -2,8 +2,9 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Consolas';
 }
+
 body {
     background-image: url("https://i.pinimg.com/originals/52/83/59/5283594dd6b1d0dd4b8a59c723a35024.gif");
     background-repeat: no-repeat;
@@ -11,12 +12,13 @@ body {
     background-size: 100%;
     width: 100%;
 }
+
 .bg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(2px);
+    backdrop-filter: brightness(0.7);
 }
 
 .home {
@@ -24,12 +26,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 19%;
+    margin: 300px;
     margin-left: 0;
     margin-right: 0;
     font-size: 150%;
     color: white;
-    text-shadow: 5px 5px 20px black, -5px -5px 20px black;
+    text-shadow: 5px 5px 15px black, -5px -5px 15px black;
 }
 
 nav {
@@ -43,8 +45,8 @@ nav {
 }
 
 nav h2 {
-    font-size: 30px;
-    padding: 20px;
+    font-size: 27px;
+    padding: 15px;
     color: white;
     letter-spacing: 1.5px;
 }
@@ -80,11 +82,12 @@ nav ul li a:hover {
     height: 360px;
     width: 360px;
     border-radius: 50%;
+    transition: all 0.6s;
 }
 
-.info {
-    width: 550px;
-    color: white;
+.personal-info img:hover {
+    box-shadow: 3px 3px 25px rgb(0, 255, 208);
+    cursor: pointer;
 }
 
 .section1 {
@@ -93,6 +96,11 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.info {
+    width: 550px;
+    color: white;
 }
 
 .info h1 {
@@ -114,9 +122,22 @@ nav ul li a:hover {
     width: 100%;
     padding: 400px 0;
 }
+
 .section2 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 8.5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 218, 178);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 95, 78);
 }
