@@ -13,17 +13,13 @@ body {
 }
 
 .bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     backdrop-filter: brightness(0.7);
 }
 
 .home {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     flex-direction: column;
     margin: 300px;
     margin-left: 0;
