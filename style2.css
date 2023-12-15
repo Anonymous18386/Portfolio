@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    width: 100%;
 }
 
 .bg {
@@ -120,7 +119,7 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 400px 0;
+    padding: 250px 0;
 }
 
 .section2 {

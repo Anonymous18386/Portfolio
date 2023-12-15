@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Consolas';
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/52/83/59/5283594dd6b1d0dd4b8a59c723a35024.gif");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: 3%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(9, 123, 103);
+    width: 70%;
+    margin-left: 15%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: repeat(2, 20rem);
+}
+
+img {
+    width: 15rem;
+    height: 14.5rem;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    transition: all 0.5s;
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+    padding: 10px;
+    border-bottom: 5px solid rgb(10, 160, 132);
+    transition: all 0.4s;
+}
+
+h1:hover {
+    border-bottom: 5px solid rgb(72, 255, 221);
+}
+
+.hvr {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 72.7%;
+    left: 11.9%;
+    padding: 0;
+    height: 0;
+    width: 75.6%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.hvr:hover .overlay {
+    height: 72.7%;
+    top: 0;
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.hvr:hover img {
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.5);
+    filter: blur(2px);
+}
+
+body::-webkit-scrollbar {
+    width: 8.5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 218, 178);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 95, 78);
+}
