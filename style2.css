@@ -52,7 +52,6 @@ nav h2 {
 
 nav ul li {
     display: inline-block;
-    list-style: none;
     cursor: pointer;
     padding: 1rem;
 }
@@ -63,10 +62,11 @@ nav ul li a {
     text-decoration: none;
     padding: 8px;
     letter-spacing: 1.5px;
+    border-radius: 20px;
+    transition: all 0.4s;
 }
 
 nav ul li a:hover {
-    border: none;
     border-radius: 20px;
     background-color: rgb(9, 123, 103);
 }
@@ -91,7 +91,7 @@ nav ul li a:hover {
 
 .section1 {
     width: 1130px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -104,6 +104,7 @@ nav ul li a:hover {
 
 .info h1 {
     font-size: 60px;
+    border-bottom: 4px solid rgb(6, 240, 197);
     margin-bottom: 45px;
 }
 
