@@ -17,22 +17,22 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
-    border: none;
+    width: 65%;
+    margin-left: 15%;
     border-radius: 10px;
     background-color: rgb(9, 123, 103);
-    width: 70%;
-    margin-left: 15%;
+    box-shadow: 0px 0px 60px 10px rgb(11, 231, 191);
 }
 
 .images {
     display: grid;
-    grid-template-columns: repeat(3, 20rem);
-    grid-template-rows: repeat(2, 20rem);
+    grid-template-columns: repeat(3, 18.5rem);
+    grid-template-rows: repeat(2, 18.5rem);
 }
 
 img {
-    width: 15rem;
-    height: 14.5rem;
+    width: 14rem;
+    height: 13.5rem;
     border-radius: 10px;
     margin: auto;
     display: block;
@@ -44,13 +44,7 @@ h1 {
     color: white;
     padding: 10px;
     border-bottom: 5px solid rgb(10, 160, 132);
-    transition: all 0.4s;
 }
-
-h1:hover {
-    border-bottom: 5px solid rgb(72, 255, 221);
-}
-
 .hvr {
     position: relative;
     display: inline-block;
@@ -67,11 +61,11 @@ h3 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 72.7%;
-    left: 11.9%;
+    top: 75%;
+    left: 12%;
     padding: 0;
     height: 0;
-    width: 75.6%;
+    width: 76.5%;
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.5);
     cursor: pointer;
@@ -80,7 +74,7 @@ h3 {
 }
 
 .hvr:hover .overlay {
-    height: 72.7%;
+    height: 73%;
     top: 0;
     opacity: 1;
     background-color: rgb(0, 0, 0, 0.5);
@@ -90,12 +84,14 @@ h3 {
     box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.5);
     filter: blur(2px);
 }
+
 video {
     border: 15px outset rgb(4, 172, 141);
     width: 700px;
-    margin: 20px 20px 50px 150px;
+    margin: 20px 20px 50px 100px;
     transition: all 0.4s;
 }
+
 video:hover {
     box-shadow: 15px 15px 5px rgb(0, 0, 0, 0.5);
 }

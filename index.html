@@ -22,13 +22,13 @@
 
             if (myPasscode == passcode) {
                 console.log(passcode)
-                window.location.href = "profilepage.html";
+                window.location.replace('profilepage.html');
             }
             else if (passcode == '' || passcode == null) {
-                alert("Please enter the passcode");
+                alert("Please enter passcode.");
             }
             else if (passcode != myPasscode) {
-                alert("You entered a wrong passcode. Please try again");
+                alert("You entered a wrong passcode, Please try again.");
             }
         }
     </script>
