@@ -93,9 +93,9 @@ button:hover {
     background-color: #F9F7F7;
 }
 .operation {
-    background-color: rgba(13,163,210,1);
+    background-color: rgb(131, 226, 255);
 }
 .c, .delete {
-    background-color: rgba(10,220,250,1);
+    background-color: rgb(50, 115, 255);
 }
 
