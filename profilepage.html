@@ -12,7 +12,7 @@
     <div id="home">
         <div class="bg">
             <nav>
-                <h2>MY PORTFOLIO</h2>
+                <h2>MJ</h2>
                 <ul>
                     <li><a onclick="window.location.replace('#home')">Home</a></li>
                     <li><a onclick="window.location.replace('#personal-info')">About Me</a></li>
@@ -27,7 +27,8 @@
             </div>
             <section class="personal-info" id="personal-info">
                 <div class="section1">
-                    <img src="Profile.jpg" onclick="fpage()">
+                    <img class="" src="Profile.jpg" onclick="fpage()">
+                    
                     <div class="info">
                         <h1>About Me</h1>
                         <p>I am 18 years old, and I live in San Miguel, Cordova, Cebu. I am currently studying at
@@ -55,6 +56,10 @@
             const url = 'https://www.facebook.com/michael.gulfan.12/';
             window.open(url);
         }
+        window.addEventListener("scroll", function(){
+            var image = document.querySelector("img");
+            image.classList.toggle("animate", window.scrollY > 500);
+        })
     </script>
 </body>
 

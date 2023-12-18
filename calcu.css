@@ -15,8 +15,8 @@ p {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 60px;
-    height: 150px;
+    font-size: 40px;
+    height: 80px;
 }
 .brdr {
     display: flex;
@@ -26,9 +26,9 @@ p {
     background-color: black;
     border-radius: 20px;
     overflow: hidden;
-    height: 580px;
-    width: 365px;
-    top: 19.2%;
+    height: 577px;
+    width: 361px;
+    top: 12.2%;
 }
 .linr {
     width: 200px;
@@ -59,7 +59,7 @@ p {
     border: 1px solid white;
     color: #112D4E;
     gap: 1.5rem;
-    top: 20%;
+    top: 13%;
 }
 h1 {
     display: flex;
@@ -98,4 +98,3 @@ button:hover {
 .c, .delete {
     background-color: rgb(50, 115, 255);
 }
-
