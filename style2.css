@@ -86,8 +86,6 @@ nav ul li a:hover {
     0% {
         transform: translateX(-500px);
     }
-    100% {
-    }
 }
 
 .personal-info img:hover {
@@ -113,13 +111,25 @@ nav ul li a:hover {
     border-bottom: 4px solid rgb(6, 240, 197);
     margin-bottom: 45px;
 }
-
+.anmt {
+    font-size: 60px;
+    border-bottom: 4px solid rgb(6, 240, 197);
+    margin-bottom: 45px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    animation: typing 1s linear;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
 .info p {
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 21px;
 }
-
 .projects {
     background-image: url("background.gif");
     background-repeat: no-repeat;

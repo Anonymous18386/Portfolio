@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(5, 214, 176);
 }
 p {
     display: flex;
@@ -23,8 +23,7 @@ p {
     position: absolute;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    border-radius: 20px;
+    background-color: rgb(5, 214, 176);
     overflow: hidden;
     height: 577px;
     width: 361px;
@@ -33,9 +32,9 @@ p {
 .linr {
     width: 200px;
     height: 700px;
-    filter: blur(20px);
+    filter: blur(10px);
     animation: animate 3.5s linear infinite;
-    background: linear-gradient(0deg, rgba(0,40,182,1) 0%, rgba(13,163,210,1) 45%, rgba(10,220,250,1) 100%);
+    background: linear-gradient(90deg, rgba(255,93,72,1) 0%, rgba(255,225,86,1) 100%);
 }
 @keyframes animate {
     from {
@@ -51,12 +50,10 @@ p {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
-    border-radius: 15px;
+    background-color: #244061;
     max-width: 350px;
     position: absolute;
     padding: 20px;
-    border: 1px solid white;
     color: #112D4E;
     gap: 1.5rem;
     top: 13%;
@@ -93,8 +90,8 @@ button:hover {
     background-color: #F9F7F7;
 }
 .operation {
-    background-color: rgb(131, 226, 255);
+    background-color: rgb(255,225,86);
 }
 .c, .delete {
-    background-color: rgb(50, 115, 255);
+    background-color: rgb(255,93,72);
 }

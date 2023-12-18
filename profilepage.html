@@ -12,7 +12,7 @@
     <div id="home">
         <div class="bg">
             <nav>
-                <h2>MJ</h2>
+                <h2>My Portfolio</h2>
                 <ul>
                     <li><a onclick="window.location.replace('#home')">Home</a></li>
                     <li><a onclick="window.location.replace('#personal-info')">About Me</a></li>
@@ -30,7 +30,7 @@
                     <img class="" src="Profile.jpg" onclick="fpage()">
                     
                     <div class="info">
-                        <h1>About Me</h1>
+                        <h1 class="" id="anmt">About Me</h1>
                         <p>I am 18 years old, and I live in San Miguel, Cordova, Cebu. I am currently studying at
                             Cordova Public
                             College, located in Gabi, Cordova, Cebu. I have a bit of knowledge of some computer
@@ -59,6 +59,10 @@
         window.addEventListener("scroll", function(){
             var image = document.querySelector("img");
             image.classList.toggle("animate", window.scrollY > 500);
+        })
+        window.addEventListener("scroll", function(){
+            var anmt = document.querySelector("#anmt");
+            anmt.classList.toggle("anmt", window.scrollY > 500);
         })
     </script>
 </body>
