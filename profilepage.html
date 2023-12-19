@@ -57,12 +57,12 @@
             window.open(url);
         }
         window.addEventListener("scroll", function(){
-            var image = document.querySelector("img");
-            image.classList.toggle("animate", window.scrollY > 500);
-        })
-        window.addEventListener("scroll", function(){
+
             var anmt = document.querySelector("#anmt");
-            anmt.classList.toggle("anmt", window.scrollY > 500);
+            var image = document.querySelector("img");
+
+            anmt.classList.toggle("anmt", window.scrollY > 350);
+            image.classList.toggle("animate", window.scrollY > 350);
         })
     </script>
 </body>
