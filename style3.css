@@ -20,8 +20,8 @@ body {
     width: 70%;
     margin-left: 15%;
     border-radius: 10px;
-    background-color: rgb(9, 123, 103);
-    box-shadow: 0px 0px 60px 10px rgb(11, 231, 191);
+    background-color: rgb(9, 123, 103); 
+    border: 2px solid black;
 }
 
 .images {
@@ -47,15 +47,6 @@ h1 {
     color: white;
     padding: 10px;
     border-bottom: 5px solid rgb(5, 214, 176);
-    white-space: nowrap;
-    width: 100%;
-    overflow: hidden;
-    animation: typing 0.7s linear;
-}
-@keyframes typing {
-    from {
-        width: 0;
-    }
 }
 .hvr {
     position: relative;
@@ -98,11 +89,6 @@ video {
     border: 15px outset rgb(4, 172, 141);
     width: 500px;
     margin: 20px 20px 50px 210px;
-    transition: all 0.4s;
-}
-
-video:hover {
-    box-shadow: 15px 15px 5px rgb(0, 0, 0, 0.5);
 }
 .brdr {
     display: flex;
@@ -117,12 +103,12 @@ video:hover {
     width: 15rem;
     height: 14.4rem;
 }
-.linr1 {
+.linear {
     position: absolute;
     width: 7rem;
     height: 21rem;
-    filter: blur(30px);
-    background: linear-gradient(0deg, rgba(0,255,208,1) 0%, rgba(0,194,159,1) 50%, rgba(0,255,208,1) 100%);
+    filter: blur(20px);
+    background: linear-gradient(0deg, rgba(0,255,208,1) 0%, rgba(0,255,208,1) 100%);
     animation: animate 3s linear infinite;
 }
 @keyframes animate {

@@ -1,7 +1,7 @@
-const screen = document.getElementById("output")
-const buttonsP = document.querySelectorAll(".printable")
+var screen = document.getElementById("output")
+var buttons = document.querySelectorAll(".printable")
 
-buttonsP.forEach(btn => {
+buttons.forEach(btn => {
     btn.addEventListener("click", () => printText(btn.innerText))
 })
 function printText(data) {
@@ -13,6 +13,6 @@ function calculate() {
 function del() {
     screen.innerText = screen.innerText.slice(0, -1)
 }
-function c() {
+function ac() {
     screen.innerText = ""
 }

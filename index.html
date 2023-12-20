@@ -16,19 +16,19 @@
     </div>
     <script>
         function checkpasscode() {
+            
             const myPasscode = 1564;
 
             var passcode = document.getElementById('passcode').value;
 
-            if (myPasscode == passcode) {
-                console.log(passcode)
+            if (passcode == myPasscode) {
                 window.location.replace('profilepage.html');
             }
             else if (passcode == '' || passcode == null) {
-                alert("Please enter passcode.");
+                alert("You haven't entered a passcode yet.");
             }
             else if (passcode != myPasscode) {
-                alert("You entered a wrong passcode, Please try again.");
+                alert("You entered a wrong passcode, Please try again.")
             }
         }
     </script>

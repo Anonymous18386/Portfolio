@@ -10,61 +10,43 @@
 
 <body>
     <div id="home">
-        <div class="bg">
-            <nav>
-                <h2>My Portfolio</h2>
-                <ul>
-                    <li><a onclick="window.location.replace('#home')">Home</a></li>
-                    <li><a onclick="window.location.replace('#personal-info')">About Me</a></li>
-                    <li><a onclick="window.location.replace('#projects')">My Project</a></li>
-                    <li><a onclick="window.open('gallery.html')">Gallery</a></li>
-                    <li><a onclick="window.location.replace('index.html')">Log out</a></li>
-                </ul>
-            </nav>
-            <div class="home">
-                <h1>Hello!, My Name Is Michael Josh O. Maranga</h1>
-                <h2>I'm A Frontend Developer</h2>
-            </div>
-            <section class="personal-info" id="personal-info">
-                <div class="section1">
-                    <img class="" src="Profile.jpg" onclick="fpage()">
-                    
-                    <div class="info">
-                        <h1 class="" id="anmt">About Me</h1>
-                        <p>I am 18 years old, and I live in San Miguel, Cordova, Cebu. I am currently studying at
-                            Cordova Public
-                            College, located in Gabi, Cordova, Cebu. I have a bit of knowledge of some computer
-                            languages like
-                            HTML, CSS, JavaScript, C, and Python. My hobbies are playing video games, learning new
-                            computer
-                            languages, web designing. I also play badminton and listen to music when I want to relax.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="projects" id="projects">
-                <div class="section2">
-                    <h1>My Project</h1>
-                    <div class="icons">
-                    <img src="calculator.png" alt="calculator icon" onclick="window.open('calculator.html')">
-                    </div>
-                </div>
-            </section>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a onclick="window.location.replace('#home')">Home</a></li>
+                <li><a onclick="window.location.replace('#personal-info')">About Me</a></li>
+                <li><a onclick="window.location.replace('#projects')">My Project</a></li>
+                <li><a onclick="window.open('gallery.html')">Gallery</a></li>
+                <li><a onclick="window.location.replace('index.html')">Log out</a></li>
+            </ul>
+        </nav>
+        <div class="home">
+            <h1>Hello!, My Name Is Michael Josh O. Maranga</h1>
+            <h2>I'm A Frontend Developer</h2>
         </div>
+        <section class="personal-info" id="personal-info">
+            <div class="section1">
+                <img src="Profile.jpg">
+                <div class="info">
+                    <h1>About Me</h1>
+                    <p>I am 18 years old, and I live in San Miguel, Cordova, Cebu. I am currently studying at
+                        Cordova Public
+                        College, located in Gabi, Cordova, Cebu. I have a bit of knowledge of some computer
+                        languages like
+                        HTML, CSS, JavaScript, C, and Python. My hobbies are playing video games, learning new
+                        computer
+                        languages, web designing. I also play badminton and listen to music when I want to relax.</p>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="section2">
+                <h1>My Project</h1>
+                <div class="icons">
+                    <img src="calculator.png" alt="calculator icon" onclick="window.open('calculator.html')">
+                </div>
+            </div>
+        </section>
     </div>
-    <script>
-        function fpage() {
-            const url = 'https://www.facebook.com/michael.gulfan.12/';
-            window.open(url);
-        }
-        window.addEventListener("scroll", function(){
-
-            var anmt = document.querySelector("#anmt");
-            var image = document.querySelector("img");
-
-            anmt.classList.toggle("anmt", window.scrollY > 350);
-            image.classList.toggle("animate", window.scrollY > 350);
-        })
-    </script>
-</body>
-
+</body> 
 </html>
