@@ -102,6 +102,7 @@ video {
     top: -75.2%;
     width: 15rem;
     height: 14.4rem;
+    transition: all 1s ease;
 }
 .linear {
     position: absolute;
@@ -110,6 +111,7 @@ video {
     filter: blur(20px);
     background: linear-gradient(0deg, rgba(0,255,208,1) 0%, rgba(0,255,208,1) 100%);
     animation: animate 3s linear infinite;
+    transition: all 1s ease;
 }
 @keyframes animate {
     0% {
@@ -130,4 +132,189 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     background-color: rgb(0, 95, 78);
+}
+@media screen and (max-width: 1325px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 10px;
+        background-color: rgb(9, 123, 103); 
+        border: 2px solid black;
+        transition: all 0.5s ease;
+    }
+    
+    .images {
+        transition: all 0.5s ease;
+        display: grid;
+        grid-template-columns: repeat(3, 15rem);
+        grid-template-rows: repeat(2, 15rem);
+    }
+    
+    img {
+        position: relative;
+        width: 12rem;
+        height: 11.5rem;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        z-index: 2;
+        border: 3px solid rgb(0, 0, 0);
+        transition: all 0.5s;
+    }
+    h3 {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        padding: 0;
+        height: 0;
+        width: 79.5%;
+        border-radius: 10px;
+        background-color: rgba(1, 255, 208, 0.5);
+        z-index: 3;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    
+    .hvr:hover .overlay {
+        height: 76.5%;
+        top: 0;
+        opacity: 1;
+        background-color: rgba(0, 255, 208, 0.5);
+    }
+    
+    .hvr:hover img {
+        filter: blur(2px);
+    }
+    
+    video {
+        border: 15px outset rgb(4, 172, 141);
+        width: 400px;
+        margin: 0 0 50px 160px;
+    }
+    .brdr {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        left: 7%;
+        top: -79%;
+        width: 12.8rem;
+        height: 12.3rem;
+    }
+    .linear {
+        position: absolute;
+        width: 7rem;
+        height: 21rem;
+        filter: blur(20px);
+        background: linear-gradient(0deg, rgba(0,255,208,1) 0%, rgba(0,255,208,1) 100%);
+        animation: animate 3s linear infinite;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 10px;
+        background-color: rgb(9, 123, 103); 
+        border: 2px solid black;
+        transition: all 0.5s ease;
+    }
+    .images {
+        transition: all 0.5s ease;
+        display: grid;
+        grid-template-columns: repeat(3, 13rem);
+        grid-template-rows: repeat(2, 13rem);
+    }
+    img {
+        position: relative;
+        width: 11rem;
+        height: 10.5rem;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        z-index: 2;
+        border: 3px solid rgb(0, 0, 0);
+        transition: all 0.5s;
+    }
+    h1 {
+        font-size: 35px;
+        color: white;
+        padding: 10px;
+        border-bottom: 5px solid rgb(5, 214, 176);
+    }
+    h3 {
+        color: white;
+        font-size: 15px;
+    }
+    
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80%;
+        left: 8%;
+        padding: 0;
+        height: 0;
+        width: 84.5%;
+        border-radius: 10px;
+        background-color: rgba(1, 255, 208, 0.5);
+        z-index: 3;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+    
+    .hvr:hover .overlay {
+        height: 80.5%;
+        top: 0;
+        opacity: 1;
+        background-color: rgba(0, 255, 208, 0.5);
+    }
+    video {
+        border: 10px outset rgb(4, 172, 141);
+        width: 300px;
+        margin: 0 0 50px 160px;
+    }
+    .brdr {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 10px;
+        overflow: hidden;
+        left: 5%;
+        top: -83%;
+        width: 11.7rem;
+        height: 11.2rem;
+    }
+    .linear {
+        position: absolute;
+        width: 7rem;
+        height: 21rem;
+        filter: blur(20px);
+        background: linear-gradient(0deg, rgba(0,255,208,1) 0%, rgba(0,255,208,1) 100%);
+        animation: animate 3s linear infinite;
+    }
 }
